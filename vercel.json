@@ -3,10 +3,10 @@
     "builds": [
         {
             "src": "premier/wsgi.py",
-            "use": "@vercel/python3.9",
+            "use": "@vercel/python",
             "config": {
                 "maxLambdaSize": "15mb",
-                "runtime": "python"
+                "runtime": "python3.9"
             }
         },
         {
