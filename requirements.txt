@@ -14,6 +14,7 @@ future==0.16.0
 idna==3.4
 jmespath==0.10.0
 mysql-connector-python==8.0.32
+libmysqlclient-dev
 mysqlclient==2.1.1
 pathspec==0.9.0
 protobuf==3.20.3
