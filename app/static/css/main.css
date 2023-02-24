@@ -1,0 +1,705 @@
+#about, #courses, #contact{
+        color: rgb(58, 57, 57);
+        font-size: 18px;
+    }
+    #about:hover, #courses:hover, #contact:hover{
+        color: #F14D5D;
+    }
+
+    #nav-active{
+        color: rgb(58, 57, 57) ;
+        font-size: 18px;
+    }
+
+    #nav-active:hover{
+        color: #F14D5D;
+    }
+
+    #course-title{
+        margin-top: 10%;
+        margin-left: 0px;
+    }
+
+    .cards{
+        text-align: center; width:65%; margin: 20px; display: flex; color: white;
+        margin-left: 20%;
+        }
+        
+        .card-items{
+        max-width: 320px;
+        min-width: 320px;
+        min-height: 150px;;
+        border-radius: 10px; 
+        margin-right:40px;
+        margin-bottom: 40px;
+        padding: 70px 20px 30px 20px;
+        }
+
+        .card-items:hover{
+        background-color: aquamarine;
+        }
+
+    .card-items h2{
+        color: white;
+        font-size: 19px;
+        }
+    
+    .card-items h2:hover{
+        color: #f5b6bd;
+    }
+    
+    .cards a:hover{
+        text-decoration: none;
+    }
+
+    .messages{
+        background-color: aquamarine;
+        padding: 20px;
+    }
+
+/*------------  Details Page -------------*/
+
+#main-doc{
+    display:flex;
+    max-width: 100%;
+    width:95%;
+    margin-left: 20px;
+    font-size:16px;
+    }
+    #main-body
+{
+    display:flex;
+    flex-direction:column;
+    width:80%;
+    padding:20px;
+    align-self:flex-start;
+    background:#fcfcfc;
+    margin-top:10%;
+    font-size:16px;
+    }
+
+.toggle-btn{
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+    top: 170px;
+    display: none;
+    background-color: black;
+}
+
+.toggle-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 8px;
+    float: left;
+    align-items: center;
+}
+
+.btoggle-btn{
+    width: 35px;
+    position: absolute;
+    left: 170px;
+    top: 700px;
+    display: none;
+}
+
+.btoggle-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 8px;
+    float: left;
+}
+
+#navbar{
+    width:20%;
+    display:flex;
+    flex-direction:column;
+    /* background:#cccccc; */
+    font-size:16px;
+    margin-bottom: 0px;
+    margin-top: 10%;
+    }
+
+#navbar header{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#navbar ul{
+    padding-left: 0px;
+    padding-top: 30px;
+}
+    #navbar ul li{
+    list-style-type:none;
+    padding:10px;
+    border-bottom:1px solid white;
+    
+}
+#navbar header h4{
+    text-align:left;
+    color: white;
+}
+#navbar a{
+    text-decoration:none;
+    color: white;
+    }
+
+#bus-body{
+    display: none;
+}
+
+.business-body{
+    max-width: 100%; align-items: center; padding-left:200px;
+}
+
+.business-body a{
+    
+    text-decoration: none;
+}
+
+.business-body a:hover{
+    text-decoration: none;
+}
+
+.business-body h5{
+    color: rgb(141, 140, 140);
+}
+
+.business-body h5:hover{
+    color: #F14D5D;
+}
+
+
+.business-contact{
+    margin-left:150px; margin-top:60px;
+}
+
+.business-contact h2{
+    text-align:center;
+    padding-left: 30px;
+    margin-left: 0px;
+}
+
+#business p{
+    font-size: 18px; 
+    margin-left:20%; 
+    margin-right:20%; text-align: justify;
+}
+
+.services{
+    padding-left: 10px;
+}
+
+.service-item{
+    padding-left:50px;
+}
+
+
+
+
+/* MOBILE Layout */
+
+@media (max-width:1280px){
+    .cards{
+        text-align: center; width:60%; 
+        margin: 10px; 
+        padding-left: 100px;
+        }
+
+    .home-services{
+        padding-left: 0px;
+        max-width: 100%;
+    }
+    
+    .service-item{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    }
+
+@media (max-width:1024px){
+    .business-body{
+        padding-left: 50px;
+        align-items: center;
+    }
+
+    .cards{
+        text-align: center; width:60%; 
+        margin: 10px; 
+        padding-left: 60px;
+        }
+    .card-items{
+        max-width: 280px;
+        min-width: 280px;
+        min-height: 150px;
+        max-height: 150px;
+        border-radius: 10px; 
+        margin-right:20px;
+        margin-bottom: 40px;
+        padding: 60px 20px 30px 20px;
+        }
+
+}
+
+@media(max-width:991px){
+
+.card-control{
+    display: flex;
+    }
+
+.cards{
+    text-align: center; width:75%; 
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 60px;
+    }
+
+.card-items{
+    max-width: 250px;
+    min-width: 250px;
+    min-height: 100px;
+    max-height: 100px;
+    border-radius: 10px; 
+    margin-right:20px;
+    margin-bottom: 40px;
+    padding: 45px 20px 30px 20px;
+    }
+
+    .card-items h2{
+        color: white;
+        font-size: 12px;
+        }
+
+
+
+.business-contact h2{
+ text-align: center;
+        
+}
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 445px;
+        top: 650px;
+       
+    }
+    #main-body{
+    background: white;
+    margin-top: 20%;
+    }
+
+    .toggle-btn{
+        display: block;
+        left: 855px;
+        top: 120px;
+        position: absolute;
+    }
+
+    .btoggle-btn{
+        display: block;
+    }
+    #navbar{
+    display: none;
+    margin-top: 30px;
+    padding-top: 20px;
+    width: 90%;
+    }
+
+    #navbar.show{
+    display:block;
+    }
+
+    #business-mobile{
+        display: none;
+    }
+
+    #bus-body.show{
+    display: block;
+    }
+
+    #main-doc{
+    display: block;
+    flex-direction: row;
+    }
+
+    .business-header{
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #business p{
+        text-align: justify;
+       
+    }
+
+    .business-body {
+       display: none;
+    }
+
+    .business-mobile{
+        display: contents;
+    }
+
+    .business-contact{
+        max-width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .services h3{
+        padding-left: 0;
+    }
+
+    .home-services{
+        padding-left: 0px;
+        max-width: 100%;
+    }
+
+    .service-item{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+}
+
+@media (min-width:820){
+    #business p{
+        font-size: 18px; 
+        margin-left:20%; 
+        margin-right:20%; text-align: justify;
+    }
+}
+
+@media (max-width:820px){
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 390px;
+        top: 710px;
+    }
+
+    .toggle-btn{
+        display: block;
+        left: 765px;
+        top: 120px;
+        position: absolute;
+    }
+
+    #main-body{
+        background: white;
+        margin-top: 20%;
+        }
+
+    
+
+}
+
+@media (max-width:768px){
+
+    .cards{
+        text-align: center; width:75%; 
+        margin: 20px; 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-left: 40px;
+        }
+
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 370px;
+        top: 590px;
+    }
+
+    .toggle-btn{
+        display: block;
+        left: 712px;
+        top: 120px;
+        position: absolute;
+    }
+
+    #business p{
+        font-size: 16px; 
+        margin-left:2%; 
+        margin-right:2%; text-align: justify;
+    }
+
+}
+
+
+@media (max-width:540px){
+
+    .cards{
+        text-align: center; width:40%; 
+        margin: 20px; 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-left: 20px;
+        }
+    
+    .card-items{
+        max-width: 200px;
+        min-width: 200px;
+        min-height: 200px;
+        max-height: 200px;
+        border-radius: 10px; 
+        margin-right:3px;
+        margin-bottom: 40px;
+        padding: 90px 10px 10px 10px;
+        }
+    .card-items h2{
+        color: white;
+        font-size: 14px;
+        }
+
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 255px;
+        top: 740px;
+    }
+
+    .toggle-btn{
+        display: block;
+        left: 485px;
+        top: 120px;
+        position: absolute;
+    }
+    .home-services{
+        padding-left: 0px;
+        max-width: 100%;
+    }
+    
+    .service-item{
+        padding-left:2px;
+        padding-right: 2px;
+    }
+
+    .service-item h4, .service-item a{
+        font-size: 10px;
+    }
+    
+    
+
+}
+
+@media (max-width:414px){
+
+.cards{
+    text-align: center; width:40%; 
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 5px;
+    }
+
+.card-items{
+    max-width: 160px;
+    min-width: 160px;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 10px; 
+    margin-right:3px;
+    margin-bottom: 40px;
+    padding: 90px 10px 10px 10px;
+}
+
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 190px;
+        top: 940px;
+    }
+
+    #main-body{
+        background: white;
+        margin-top: 30%;
+        }
+
+    .toggle-btn{
+        display: block;
+        left: 355px;
+        top: 120px;
+        position: absolute;
+    }
+
+}
+
+@media (max-width:393px){
+
+.cards{
+    text-align: center; width:40%; 
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 5px;
+    }
+
+.card-items{
+    max-width: 150px;
+    min-width: 150px;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 10px; 
+    margin-right:3px;
+    margin-bottom: 40px;
+    padding: 90px 10px 10px 10px;
+    }
+    
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 175px;
+        top: 1000px;
+        
+    }
+
+    .business-header{
+        max-width: 100%;
+        margin-top: 10%;
+        padding: 0;
+    }
+
+    .toggle-btn{
+        width: 35px;
+        left: 330px;
+        position: absolute;
+        top: 128px;
+    }
+
+}
+
+@media (max-width:375px){
+
+    .cards{
+        text-align: center; width:35%; 
+        margin: 20px; 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-left: 1px;
+        }
+
+    .toggle-btn{
+        width: 35px;
+        left: 315px;
+        position: absolute;
+        top: 128px;
+    }
+}
+
+@media (max-width:360px){
+    #course-title{
+        margin-top: 20%;
+    }
+
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 165px;
+        top: 1120px;
+    }
+
+    .toggle-btn{
+        width: 35px;
+        left: 310px;
+        position: absolute;
+        top: 138px;
+    }
+
+    #main-body{
+        background: white;
+        margin-top: 40%;
+        }
+
+    .business-header{
+        max-width: 100%;
+        margin-top: 10%;
+        padding: 0;
+    }
+
+}
+
+@media (max-width:280px){
+
+    #about, #courses, #contact, #nav-active{
+        color: rgb(58, 57, 57);
+        font-size: 12px;
+    }
+
+    #course-title{
+        margin-top: 20%;
+    }
+    .cards{
+        text-align: center; width:40%; 
+        margin: 10px; 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-left: 1px;
+        }
+    
+    .card-items{
+        max-width: 120px;
+        min-width: 120px;
+        min-height: 200px;
+        max-height: 200px;
+        border-radius: 10px; 
+        margin-right:7px;
+        margin-bottom: 40px;
+        padding: 90px 10px 10px 10px;
+        }
+    
+
+    #main-body{
+        background: white;
+        margin-top: 60%;
+        }
+    .business-header{
+        max-width: 100%;
+        margin-top: 10%;
+        padding: 0;
+    }
+
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 125px;
+        top: 1620px;
+    }
+
+    .toggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 225px;
+        top: 138px;
+    }
+
+    .home-services{
+        padding-left: 0px;
+        max-width: 100%;
+    }
+    
+    .service-item{
+        padding-left:2px;
+        padding-right: 2px;
+    }
+
+    .service-item h4, .service-item a{
+        font-size: 6px;
+    }
+}
+
+
+         

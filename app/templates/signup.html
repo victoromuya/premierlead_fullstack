@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%  block content %}
+
+<div class="container-fluid px-0 py-5" id="our-course">
+    <div class="row mx-0 justify-content-center pt-5">
+        <div class="col-lg-6">
+            <div class="section-title text-center position-relative mb-4" id="course-title">
+    
+                <h1 class="display-4">Our Courses</h1>
+            </div>
+        </div>
+    </div>
+    <div class="card-control">
+            <div class="cards">
+               
+                <a href="#register" id="html">
+                    <div class="card-items bg-primary">
+                        <h2>HTML/CSS/ BOOTSTRAP</h2>
+                    </div>
+                </a>
+          
+
+            <a href="#register" id="react" >
+                <div class="card-items bg-primary">
+                    <h2>FRONTEND (REACT JS)</h2>
+                </div>
+            </a>
+                
+               <a href="#register" id="python">
+                    <div class="card-items bg-primary">
+                        <h2>PYTHON</h2>
+                    </div>
+               </a>
+
+                
+            </div>
+
+            <div class="cards">
+                <a href="#register" id="science" >
+                    <div class="card-items bg-primary">
+                        <h2>DATA SCIENCE</h2>
+                    </div>
+                </a>
+
+                <a href="{% url 'django' %}" id="web" >
+                    <div class="card-items bg-primary">
+                        <h2>PYTHON WEB DEVELOPMENT</h2>
+                    </div>
+                </a>
+
+                <a href="#register" id="data" >
+                    <div class="card-items bg-primary">
+                        <h2>DATA ANALYSIS</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+       
+    </div>
+       </div>
+</div>
+
+
+<script>
+
+</script>
+{% endblock %}
