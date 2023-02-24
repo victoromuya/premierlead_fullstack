@@ -99,26 +99,26 @@
     <div class="container-fluid bg-white" style="margin: 40px 0; min-width: 100%;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 my-3 pt-2 pb-lg-5">
+                <div class="col-lg-7 my-3 pt-2 pb-lg-5" style="padding-left:40px;">
                     <div class="section-title position-relative mb-4 mr-0">
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2"></h6>
 
                         <h1 >it all begins here...</h1>
                         
                     </div>
-                    <p class="mb-4 pb-2 mr-5" style="text-align: justify; font-size:20px; color:black; 
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">We are a leading data, software development and training consulting agency. We develop and provide solutions
+                    <p class="mb-4 pb-2 mr-5" style="text-align: justify; font-size:18px; color:black; 
+                    ">We are a leading data, software development and training consulting agency. We develop and provide solutions
                     ranging from web and mobile applications to artificial intelligence. We consult for SMEs and large scale businesses. 
                     Our training program is industry standard as we deliver relevant and practical contents with great and consistent strategies that helps each student learn quickly and grasp every concept.</p>
                     
-                    <p class="mb-4 pb-2 mr-5"  style="text-align: justify; font-size:20px; color:black; 
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                    <p class="mb-4 pb-2 mr-5"  style="text-align: justify; font-size:18px; color:black; 
+                   ">
                         Our intention is to transform the world of technology. Create a world of possibilities
                         and solve problems even as we raise problem solvers. We have a team that is ready to work until we see a better world, 
                         a world where every problem has a solution and every solution needed has a multitude that can provide them. 
             
-                        <p class="mb-4 pb-2 mr-5" style="text-align: justify; font-size:20px; color:black;
-                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Technology is for all, and we have made it our priority and a point of duty to take it to everyone.</p>
+                        <p class="mb-4 pb-2 mr-5" style="text-align: justify; font-size:18px; color:black;
+                        ">Technology is for all, and we have made it our priority and a point of duty to take it to everyone.</p>
                     
 
                 </div>
@@ -152,9 +152,9 @@
             
             <div class="service-item">
                 <div class="courses-item position-relative">
-                    <img class="img-fluid" src="{% static 'img/courses-1.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/webmobile.jpg' %}" alt="">
                     <div class="courses-text">
-                        <h4 class="text-center text-white px-3">Business Solutions</h4>
+                        <h4 class="text-center text-white px-3">Web & Mobile Apps</h4>
                         
                         <div class="w-100 bg-white text-center p-4" >
                             <a class="btn btn-primary" href="{% url 'business' %}">Subscribe</a>
@@ -165,9 +165,9 @@
 
             <div class="service-item">
                 <div class="courses-item position-relative">
-                    <img class="img-fluid" src="{% static 'img/courses-2.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/business-so.jpg' %}" alt="" >
                     <div class="courses-text">
-                        <h4 class="text-center text-white px-3">Data and Machine Learning</h4>
+                        <h4 class="text-center text-white px-3">Data & Machine Learning</h4>
                      
                         <div class="w-100 bg-white text-center p-4" >
                             <a class="btn btn-primary" href="{% url 'business' %}">Subscribe</a>
@@ -178,7 +178,7 @@
 
             <div class="service-item" >
                 <div class="courses-item position-relative">
-                    <img class="img-fluid" src="{% static 'img/courses-3.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/training.jpg' %}" alt="" >
                     <div class="courses-text">
                         <h4 class="text-center text-white px-3">Training</h4>
                      
@@ -352,13 +352,13 @@
                         <form action="" method="POST">
                             {% csrf_token %}
                             <div class="row g-3">
-                                <div class="col-4 pb-4">
+                                <div class="col-12 pb-4">
                                     <input type="text" class="form-control border-0 px-4" placeholder="Name" name="name" style="height: 55px;" required>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 pb-4">
                                     <input type="email" class="form-control border-0 px-4" placeholder="Email" name="email" style="height: 55px;" required>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12 pb-4">
                                     <input type="phone" class="form-control border-0 px-4" placeholder="Phone" name="phone" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 pb-4">

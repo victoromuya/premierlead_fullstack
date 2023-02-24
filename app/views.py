@@ -59,7 +59,7 @@ class Django(View):
     
 
 def frontend(request):
-    return render(request, 'basic-fronthend.html')
+    return render(request, 'basic-frontend.html')
 
 def science(request):
     return render(request, 'data-science.html')
@@ -71,7 +71,7 @@ def python(request):
     return render(request, 'python.html')
 
 def react(request):
-    return render(request, 'react.html')
+    return render(request, 'reactjs.html')
 
 
 class Business(View):

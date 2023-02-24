@@ -1,6 +1,6 @@
 #about, #courses, #contact{
         color: rgb(58, 57, 57);
-        font-size: 18px;
+        font-size: 16px;
     }
     #about:hover, #courses:hover, #contact:hover{
         color: #F14D5D;
@@ -8,7 +8,7 @@
 
     #nav-active{
         color: rgb(58, 57, 57) ;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #nav-active:hover{
@@ -22,7 +22,7 @@
 
     .cards{
         text-align: center; width:65%; margin: 20px; display: flex; color: white;
-        margin-left: 20%;
+        margin-left: 12%;
         }
         
         .card-items{
@@ -75,8 +75,13 @@
     align-self:flex-start;
     background:#fcfcfc;
     margin-top:10%;
+    margin-left: 2%;
     font-size:16px;
     }
+
+#main-body article{
+    max-width:80%;
+}
 
 .toggle-btn{
     width: 25px;
@@ -191,12 +196,16 @@
     margin-right:20%; text-align: justify;
 }
 
-.services{
-    padding-left: 10px;
+.home-services{
+    padding-left: 20px;
 }
 
 .service-item{
-    padding-left:50px;
+    padding-left:30px;
+}
+
+.service-item img{
+    max-width: 400px;
 }
 
 
@@ -243,6 +252,9 @@
         margin-bottom: 40px;
         padding: 60px 20px 30px 20px;
         }
+.service-item img{
+    max-width: 318px;
+}
 
 }
 
@@ -272,11 +284,10 @@
     padding: 45px 20px 30px 20px;
     }
 
-    .card-items h2{
-        color: white;
-        font-size: 12px;
-        }
-
+.card-items h2{
+    color: white;
+    font-size: 12px;
+    }
 
 
 .business-contact h2{
@@ -366,6 +377,11 @@
         padding-left: 5px;
         padding-right: 5px;
     }
+
+    .service-item img{
+        max-width: 294px;
+    }
+
     
 }
 
@@ -397,7 +413,9 @@
         margin-top: 20%;
         }
 
-    
+    .service-item img{
+        max-width: 262px;
+    }
 
 }
 
@@ -431,6 +449,11 @@
         margin-left:2%; 
         margin-right:2%; text-align: justify;
     }
+
+    .service-item img{
+        max-width: 245px;
+    }
+
 
 }
 
@@ -487,6 +510,11 @@
     .service-item h4, .service-item a{
         font-size: 10px;
     }
+
+    .service-item img{
+        max-width: 176px;
+    }
+
     
     
 
@@ -531,6 +559,10 @@
         left: 355px;
         top: 120px;
         position: absolute;
+    }
+
+    .service-item img{
+        max-width: 134px;
     }
 
 }
@@ -578,6 +610,10 @@
         top: 128px;
     }
 
+    .service-item img{
+        max-width: 127px;
+    }
+
 }
 
 @media (max-width:375px){
@@ -596,6 +632,10 @@
         left: 315px;
         position: absolute;
         top: 128px;
+    }
+
+    .service-item img{
+        max-width: 120px;
     }
 }
 
@@ -627,6 +667,9 @@
         max-width: 100%;
         margin-top: 10%;
         padding: 0;
+    }
+    .service-item img{
+        max-width: 115px;
     }
 
 }
@@ -698,6 +741,10 @@
 
     .service-item h4, .service-item a{
         font-size: 6px;
+    }
+
+    .service-item img{
+        max-width: 89.5px;
     }
 }
 
