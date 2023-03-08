@@ -26,6 +26,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS = ['https://premier-app.fly.dev']
+
 EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
@@ -80,7 +82,7 @@ WSGI_APPLICATION = 'premier.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ['DATABASE_URL']),
+    #'default': dj_database_url.parse(os.environ['DATABASE_URL']),
      
 }
 

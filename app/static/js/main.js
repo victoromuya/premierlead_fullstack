@@ -124,3 +124,8 @@
     
 })(jQuery);
 
+$(document).ready(function(){
+    $('.header-index').height($(window).height());
+    
+   })
+

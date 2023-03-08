@@ -63,9 +63,7 @@
         padding: 20px;
     }
 
-    .header-index{
-        height: 600px;
-    }
+  
 
 
 /*------------  Details Page -------------*/
@@ -93,6 +91,14 @@
 
 #main-body article{
     max-width:80%;
+}
+
+#payment .bonus{
+    background-color: #000; 
+    color:white; 
+    height: 5%; 
+    width: 72%; 
+    padding-left:10px
 }
 
 .toggle-btn{
@@ -329,9 +335,15 @@
         top: 650px;
        
     }
+
     #main-body{
     background: white;
     margin-top: 20%;
+    width: 100%;
+    }
+
+    #main-body article{
+        max-width:100%;
     }
 
     .toggle-btn{
@@ -346,9 +358,18 @@
     }
     #navbar{
     display: none;
-    margin-top: 30px;
+    margin-top: 80px;
     padding-top: 20px;
-    width: 90%;
+    margin-bottom: 2px;
+    width: 98%;
+    }
+
+    #payment .bonus{
+        background-color: #000; 
+        color:white; 
+        height: 7%; 
+        width: 98%; 
+        padding-left:5px
     }
 
     #navbar.show{
