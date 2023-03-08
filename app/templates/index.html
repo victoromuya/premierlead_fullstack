@@ -19,7 +19,7 @@
                             <p class="text-white mb-5" style="font-size: 14px;">
                                 With evidiences, we have positively impacted individuals and businesses through
                                 software development, websites, training and data solutions.
-                                Your growth is why we are here, all you need to go is to start with us now...
+                                Your growth is why we are here, all you need to do is to start with us now...
                             </p>
                             <div class="mb-5" style="width: 30%; max-width: 800px;">
                                 <a href="#register" class="btn btn-secondary py-3 d-none d-lg-block" style="font-size:22px; border-radius: 40px; font-weight: bold;">start now</a>
@@ -134,31 +134,47 @@
         </div>
     </div>
 
-  Feature Start -->
 
+
+    
+
+  Feature Start -->
   <div class="container-fluid bg-white" style="margin: 40px 0; min-width: 100%;">
     <div class="container">
         <div class="row" style="margin: auto; line-height: 1.7;">
-            <div class="col-lg-4 my-t pt-2 pb-lg-5" style="padding-left:10px;">
-            <p class="mb-2 px-4 py-3 mr-5" 
-            style="text-align: justify; font-size:16px; border-radius: 10px; min-height: 97%">
-                    Web and mobile applications are vital tools for business growth whose effects can't be 
-                over emphasized. We have lengthy years of experience building websites and softwares for businesses,  and we 
-            also deliver the best SEO</p>
+            <div class="col-lg-4 mt-3 pt-2 pb-lg-5" style="padding-left:10px;">
+                <div class="btn-icon bg-primary mr-4 ml-3" style="border-radius: 40px;">
+                    <i class="fa fa-2x fa-desktop text-white"></i>
+                </div>
+                    <p class="mb-2 px-4 pt-3 mr-3" 
+                    style="text-align: justify; font-size:16px; border-radius: 10px; min-height: 97%">
+                            Web and mobile applications are vital tools for business growth whose effects can't be 
+                        over emphasized. We have lengthy years of experience building websites and softwares for businesses,  and we 
+                    also deliver the best SEO 
+                    <span class="link-btn"><a href="{% url 'business' %}"><i class="fas fa-arrow-right text-white"></i></span></a> </p> 
+                    
             </div>
 
             <div class="col-lg-4 mt-3 pt-2 pb-lg-5" style="padding-left:10px;">
+                <div class="btn-icon bg-primary mr-4 ml-3" style="border-radius: 40px;">
+                    <i class="fa fa-2x fa-chalkboard-teacher text-white"></i>
+                </div>
                 <p class="mb-2 px-4 py-3 mr-5 " style="text-align: justify; font-size:16px; border-radius: 10px;
                 min-height: 97%;">
                 Our training approach is such that is tailored towards individuals assimilation  and creative capacity.
-            We train individuals at their own pace in other to get the best of them.</p>
+            We train individuals at their own pace in other to get the best of them.
+            <span class="link-btn"><a href="{% url 'signup' %}"><i class="fas fa-arrow-right text-white"></i></span></a> </p> 
             </div>
         
             <div class="col-lg-4 mt-3 pt-2 pb-lg-5" style="padding-left:10px;">
+                <div class="btn-icon bg-primary mr-4 ml-3" style="border-radius: 40px;">
+                    <i class="fa fa-2x fa-chart-line text-white"></i>
+                </div>
                 <p class="mb-2 px-4 py-3 mr-3" style="text-align: justify; font-size:16px; border-radius: 10px;
                 min-height: 97%">
                 Data they say is the new oil. Businesses and their growth are built on data. We all use data to generate leads either 
-            professionally or not. We will maximize data for the tremendous growth of your business.</p>
+            professionally or not. We will maximize data for the tremendous growth of your business.
+            <span class="link-btn"><a href="{% url 'business' %}"><i class="fas fa-arrow-right text-white"></i></span></a> </p> 
             </div>
        
         </div>
@@ -166,13 +182,87 @@
 </div>
 
 
+<!--Testimonial Start -->
+ <div class="container-fluid  py-5" style="margin: 90px 0; background-color:black" id="testimonial">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="section-title position-relative mb-4">
+                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2"></h6>
+                    <h2 class="display-4 text-white">Client's Review</h1>
+                </div>
+                <p class="m-0" style="color: gray">We are glad to share with you some messages from our clients that we have consulted for and students that has passed through our training.</p>
+            </div>
+            <div class="col-lg-7">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="bg-black p-5">
+                        <i class="fa fa-3x fa-quote-left mb-4" style="color: gray"></i>
+                        <p style="color: gray">Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum. Est nonumy tempor at kasd. Sed at dolor duo ut dolor, et justo erat dolor magna sed stet amet elitr duo lorem</p>
+                        <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                            <img class="img-fluid mr-4" src="{% static 'img/testimonial-1.jpg' %}" alt="">
+                            <div>
+                                <h5 class="text-white">Student Name</h5>
+                                <span class="text-white">Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-black p-5">
+                        <i class="fa fa-3x fa-quote-left text-primary mb-4" style="color: gray"></i>
+                        <p style="color: gray">Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum. Est nonumy tempor at kasd. Sed at dolor duo ut dolor, et justo erat dolor magna sed stet amet elitr duo lorem</p>
+                        <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                            <img class="img-fluid mr-4" src="{% static 'img/testimonial-2.jpg' %}" alt="">
+                            <div>
+                                <h5 class="text-white">Student Name</h5>
+                                <span class="text-white">Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="stat">
+                    <div class="row pt-3 mx-0">
+                        <div class="col-3 px-0">
+                            <div class="bg-black text-center pr-3 p-2 pl-0">
+                                <h1 class="text-secondary" data-toggle="counter-up">10</h1>
+                                <h6 class="" style="color: white; font-size:11px">Businesses<span class="d-block">Built</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-black text-center p-2 pr-4">
+                                <h1 class="text-secondary" data-toggle="counter-up">6</h1>
+                                <h6 class=""style="color: white; font-size:11px">Online<span class="d-block">Courses</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-black text-center p-2 pr-4">
+                                <h1 class="text-secondary" data-toggle="counter-up">5</h1>
+                                <h6 class="" style="color: white; font-size:11px">Skilled<span class="d-block">Instructors</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-black text-center p-2">
+                                <h1 class="text-secondary" data-toggle="counter-up">102</h1>
+                                <h6 class=""style="color: white; font-size:11px">Happy<span class="d-block">Clients</span></h6>
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
 
     <!-- Courses Start -->
 
-    <!-- Courses Start -->
+    <!-- Courses Start
     <div class="container-fluid px-0 pb-4">
      
-        <div class="home-services" style="display:flex; align-items: center; max-width: 100%; margin-bottom:5% ;">
+        <div class="home-services mx-auto" style="display:flex; align-items: center; max-width: 100%; margin-bottom:5% ;">
             
             <div class="service-item">
                 <div class="courses-item position-relative">
@@ -189,7 +279,7 @@
 
             <div class="service-item">
                 <div class="courses-item position-relative">
-                    <img class="img-fluid" src="{% static 'img/business-so.jpg' %}" alt="" >
+                    <img class="" src="{% static 'img/business-so.jpg' %}" alt="" >
                     <div class="courses-text">
                         <h4 class="text-center text-white px-3">Data & Machine Learning</h4>
                      
@@ -215,7 +305,7 @@
         </div>
     </div>
 
-    <!-- Courses End -->
+    Courses End -->
 
 
     <!-- Team Start 
@@ -290,102 +380,31 @@
         Team End -->
 
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid  py-5" style="margin: 90px 0; background-color:black" id="testimonial">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <div class="section-title position-relative mb-4">
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2"></h6>
-                        <h2 class="display-4 text-white">Client's Review</h1>
-                    </div>
-                    <p class="m-0" style="color: gray">We are glad to share with you some messages from our clients that we have consulted for and students that has passed through our training.</p>
-                </div>
-                <div class="col-lg-7">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="bg-black p-5">
-                            <i class="fa fa-3x fa-quote-left mb-4" style="color: gray"></i>
-                            <p style="color: gray">Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum. Est nonumy tempor at kasd. Sed at dolor duo ut dolor, et justo erat dolor magna sed stet amet elitr duo lorem</p>
-                            <div class="d-flex flex-shrink-0 align-items-center mt-4">
-                                <img class="img-fluid mr-4" src="{% static 'img/testimonial-1.jpg' %}" alt="">
-                                <div>
-                                    <h5 class="text-white">Student Name</h5>
-                                    <span class="text-white">Web Design</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-black p-5">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4" style="color: gray"></i>
-                            <p style="color: gray">Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum. Est nonumy tempor at kasd. Sed at dolor duo ut dolor, et justo erat dolor magna sed stet amet elitr duo lorem</p>
-                            <div class="d-flex flex-shrink-0 align-items-center mt-4">
-                                <img class="img-fluid mr-4" src="{% static 'img/testimonial-2.jpg' %}" alt="">
-                                <div>
-                                    <h5 class="text-white">Student Name</h5>
-                                    <span class="text-white">Web Design</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="stat">
-                        <div class="row pt-3 mx-0">
-                            <div class="col-3 px-0">
-                                <div class="bg-black text-center pr-3 p-2 pl-0">
-                                    <h1 class="text-secondary" data-toggle="counter-up">10</h1>
-                                    <h6 class="" style="color: white; font-size:11px">Businesses<span class="d-block">Built</span></h6>
-                                </div>
-                            </div>
-                            <div class="col-3 px-0">
-                                <div class="bg-black text-center p-2 pr-4">
-                                    <h1 class="text-secondary" data-toggle="counter-up">6</h1>
-                                    <h6 class=""style="color: white; font-size:11px">Online<span class="d-block">Courses</span></h6>
-                                </div>
-                            </div>
-                            <div class="col-3 px-0">
-                                <div class="bg-black text-center p-2 pr-4">
-                                    <h1 class="text-secondary" data-toggle="counter-up">5</h1>
-                                    <h6 class="" style="color: white; font-size:11px">Skilled<span class="d-block">Instructors</span></h6>
-                                </div>
-                            </div>
-                            <div class="col-3 px-0">
-                                <div class="bg-black text-center p-2">
-                                    <h1 class="text-secondary" data-toggle="counter-up">102</h1>
-                                    <h6 class=""style="color: white; font-size:11px">Happy<span class="d-block">Clients</span></h6>
-                                </div>
-                            </div>
-                        </div> 
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
+   
 
     <!-- Contact Start -->
     <div class="container-fluid py-2 wow fadeInUp" data-wow-delay="0.1s" style="margin-top:50px;" id="section_3">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact Us</h5>
                 <h1 class="display-5 mb-0">Feel Free To Contact Us</h1>
             </div>
             <div class="row g-5 mx-auto">
-                <div class="col-lg-9 mx-auto wow slideInUp" data-wow-delay="0.3s">
+                <div class="col-lg-12 mx-auto wow slideInUp" data-wow-delay="0.3s">
                     <div class="bg-light rounded p-5">
                         <form action="" method="POST">
                             {% csrf_token %}
                             <div class="row g-3">
-                                <div class="col-12 pb-4">
+                                <div class="col-5 pb-4">
                                     <input type="text" class="form-control border-0 px-4" placeholder="Name" name="name" style="height: 55px;" required>
                                 </div>
-                                <div class="col-12 pb-4">
-                                    <input type="email" class="form-control border-0 px-4" placeholder="Email" name="email" style="height: 55px;" required>
-                                </div>
-                                <div class="col-12 pb-4">
+                                <div class="col-7 pb-4">
                                     <input type="phone" class="form-control border-0 px-4" placeholder="Phone" name="phone" style="height: 55px;" required>
                                 </div>
-                                <div class="col-12 pb-4">
+                                <div class="col-5 pb-4">
+                                    <input type="email" class="form-control border-0 px-4" placeholder="Email" name="email" style="height: 55px;" required>
+                                </div>
+                                
+                                <div class="col-7 pb-4">
                                     <input type="text" class="form-control border-0 px-4" placeholder="Subject" name="subject" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 pb-4">

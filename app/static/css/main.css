@@ -1,14 +1,14 @@
 #about, #courses, #contact{
-        color: rgb(58, 57, 57);
-        font-size: 16px;
+        color: #000;
+        font-size: 14px;
     }
     #about:hover, #courses:hover, #contact:hover{
         color: #F14D5D;
     }
 
     #nav-active{
-        color: rgb(58, 57, 57) ;
-        font-size: 16px;
+        color: #000;
+        font-size: 14px;
     }
 
     #nav-active:hover{
@@ -20,8 +20,14 @@
         margin-left: 0px;
     }
 
+    .card-control{
+        background-color: #000;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
     .cards{
-        text-align: center; width:65%; margin: 20px; display: flex; color: white;
+        text-align: center; width:65%; margin: 20px; display: flex; color: #fff;
         margin-left: 12%;
         }
         
@@ -40,12 +46,12 @@
         }
 
     .card-items h2{
-        color: white;
+        color: #fff;
         font-size: 19px;
         }
     
     .card-items h2:hover{
-        color: #f5b6bd;
+        color: #F14D5D;
     }
     
     .cards a:hover{
@@ -61,6 +67,7 @@
         height: 600px;
     }
 
+
 /*------------  Details Page -------------*/
 
 #main-doc{
@@ -70,7 +77,8 @@
     margin-left: 20px;
     font-size:16px;
     }
-    #main-body
+
+#main-body
 {
     display:flex;
     flex-direction:column;
@@ -201,17 +209,29 @@
 }
 
 .home-services{
-    padding-left: 20px;
+    padding-left: 80px;
 }
 
+
 .service-item{
-    padding-left:30px;
+    padding-right:70px;
 }
 
 .service-item img{
-    max-width: 400px;
+    max-width: 300px;
 }
 
+.link-btn{
+    margin-left: 10px;
+    background-color: #F14D5D;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.link-btn:hover{
+    background-color: #000;
+}
 
 
 

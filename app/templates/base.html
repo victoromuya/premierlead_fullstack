@@ -61,11 +61,15 @@
     
          <!-- Navbar Start -->
          <div class="container-fluid p-0" >
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 py-lg-0 px-lg-5" style="height:50px;">
-                <a href="{% url 'home' %}" class="navbar-brand ml-lg-1">
-                    <h4 class="m-0 text-dark">Premierelead</h4>
-                </a>
-                <button type="button" class="navbar-toggler bg-secondary" data-toggle="collapse" data-target="#navbarCollapse">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 py-lg-0 px-lg-5" style="height:50px; border-bottom: 1px solid #000;">
+                <div style="display: flex;">
+                    <a href="{% url 'home' %}" class="navbar-brand ml-lg-1 pr-0">
+                        <img class="" src="{% static 'img/PRIMERLEAD4.png' %}" style="width: 22px;">
+                    </a>
+                </div>
+
+
+                <button type="button" class="navbar-toggler bg-white" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
@@ -75,7 +79,8 @@
                         <a href="{% url 'signup' %}" class="nav-item nav-link bg-white" style="height: 20px; padding-bottom:25px; padding-top:1px" id="courses">training</a>
                         <a href="{% url 'business' %}" class="nav-item nav-link bg-white" style="height: 20px; padding-bottom:25px; padding-top:1px" id="courses">business solutions</a>
                     </div>
-                    
+                  
+                
                    
                 </div>
             </nav>
@@ -102,7 +107,7 @@
                     <p class="m-0">We are a leading software, data and training consulting agency.</p> 
                 </div>
                 <div class="col-md-6 mb-5">
-                    <h3 class="text-white mb-4">Newsletter</h3>
+                    <h3 class="text-secondary mb-4">Newsletter</h3>
                     <div class="w-100">
                         <div class="input-group">
                             <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
@@ -115,19 +120,19 @@
             </div>
             <div class="row">
                 <div class="col-md-4 mb-5">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <h3 class="text-secondary mb-4">Get In Touch</h3>
                     <p><i class="fa fa-map-marker-alt mr-2"></i>Lagos, Nigeria</p>
                     <p><i class="fa fa-phone-alt mr-2"></i>+234 816 6461 232</p>
                     <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
                     <div class="d-flex justify-content-start mt-4">
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
-                        <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+                        <a class="text-secondary mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
+                        <a class="text-secondary mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
+                        <a class="text-secondary mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
+                        <a class="text-secondary" href="#"><i class="fab fa-2x fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
-                    <h3 class="text-white mb-4">Our Courses</h3>
+                    <h3 class="text-secondary mb-4">Our Courses</h3>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-white-50 mb-2" href="{% url 'business' %}"><i class="fa fa-angle-right mr-2"></i>Web Development</a>
                         <a class="text-white-50 mb-2" href="{% url 'business' %}"><i class="fa fa-angle-right mr-2"></i>Mobile App Design</a>
@@ -137,7 +142,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
-                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <h3 class="text-secondary mb-4">Quick Links</h3>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
